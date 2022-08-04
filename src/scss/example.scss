@@ -1,0 +1,54 @@
+.example {
+  position: relative;
+  h4 {
+    // background-color: #91dceb;
+    background-color: #ede9e8;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  .row {
+    margin: 0;
+    padding: 0;
+
+    .left {
+      background-color: $primaryColor;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      button{
+        margin: 0 1rem;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        text-transform: capitalize;
+        border-radius: 5px;
+        transition: 300ms ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover{
+        background-color: gray;
+      }
+
+    }
+
+    .right {
+      background-color: $secondaryColor;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+    }
+  }
+}
